@@ -10,14 +10,19 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:search-c---error.SearchSelectedText"
+		"onCommand:search-c---error.SearchinStackOverflow",
+		"onCommand:search-c---error.SearchinGithub"
 	],
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "search-c---error.SearchSelectedText",
-				"title": "SearchSelectedText"
+				"command": "search-c---error.SearchinStackOverflow",
+				"title": "SearchinStackOverflow"
+			},
+			{
+				"command": "search-c---error.SearchinGithub",
+				"title": "SearchinGithub"
 			}
 		]
 	},
