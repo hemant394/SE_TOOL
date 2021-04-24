@@ -11,7 +11,10 @@
 	],
 	"activationEvents": [
 		"onCommand:search-c---error.SearchinStackOverflow",
-		"onCommand:search-c---error.SearchinGithub"
+		"onCommand:search-c---error.SearchinGithub",
+		"onCommand:search-c---error.SearchinCppreference",
+		"onCommand:search-c---error.SearchinGoogle",
+		"onCommand:search-c---error.GithubResults"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -23,7 +26,20 @@
 			{
 				"command": "search-c---error.SearchinGithub",
 				"title": "SearchinGithub"
+			},
+			{
+				"command": "search-c---error.SearchinCppreference",
+				"title": "SearchinCppreference"
+			},
+			{
+				"command": "search-c---error.SearchinGoogle",
+				"title": "SearchinGoogle"
+			},
+			{
+				"command": "search-c---error.GithubResults",
+				"title": "GithubResults"
 			}
+			
 		]
 	},
 	"scripts": {
