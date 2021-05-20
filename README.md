@@ -1,65 +1,49 @@
-# search-c---error README
+# CodeSearch : Tool for searching cpp related queries on different sites
 
-This is the README for your extension "search-c---error". After writing up a brief description, we recommend including the following sections.
 
-## Features
+---------------------------------------------------------------------------------------------------
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Motivation
 
-For example if there is an image subfolder under your extension project workspace:
+This is the README for  extension "CodeSearch". 
+We know how c++ is widely used nowadays by competitive
+programmers and Naive programmers So there is very less
+probability that they won’t encounter any errors while using
+different standard template libraries and different other inbuilt
+functions. We also know that Since 2012, C++ is on a three-year
+release schedule, with C++23 as the next planned standard So it is
+very likely to see some new changes and eventually face errors.
+So now we understood that errors are bound to happen. Now
+Question arises how to resolve them with wasting least amount of
+time and energy.So we know searching takes time So we have
+developed a VS Code Extension which allows users to search
+different queries from within VS Code. It will save lot of time
+of programmers and will boost their efficiency and Speed.
 
-\!\[feature X\]\(images/feature-x.png\)
+---------------------------------------------------------------------------------------------------
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Use Case
+Our Tool comes handy for new programmers who encounter with
+errors more frequently and don’t know where to search. it is very
+tedious job to search on google and find different solutions for
+errors that is where our tool comes into picture. user can use our
+tool to search different errors on stack overflow or user can also
+search different important inbuilt functions and data structures
+on cppreference. on cppreference user will be able to find documentation
+of different data structure present in standard template
+libraries and functions which can be used on them. user will be
+able to learn in depth if he/she searches it on cppreference through
+our tool which will redirect user to that link and user will no more
+have to search it on google. Now we can take an example of one of
+the many use cases of our tool. if user is having problem knowing
+different functions which he/she can operate on priority queue
+then user can select priority queue keyword and can search it on
+cppreference using proper command and user will be able to see
+different in depth knowledge on priority queue and different functions
+revolving around it.One another scenario where user can use
+our app is if user wants to fetch different similar programs from
+github then user can click on "githubresults" command and then
+tool will open a search engine for github where user can search
+anything on github and will able to open them and user can learn
+about different coding practices which programmers use
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
