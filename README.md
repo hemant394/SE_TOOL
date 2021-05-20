@@ -49,5 +49,11 @@ about different coding practices which programmers use
 
 ## Screenshots
 ![ScreenShot](https://github.com/hemant394/SE_TOOL/blob/main/screenshots/s1.png)
+![ScreenShot](https://github.com/hemant394/SE_TOOL/blob/main/screenshots/s2.png)
+![ScreenShot](https://github.com/hemant394/SE_TOOL/blob/main/screenshots/s3.png)
+![ScreenShot](https://github.com/hemant394/SE_TOOL/blob/main/screenshots/s4.png)
+![ScreenShot](https://github.com/hemant394/SE_TOOL/blob/main/screenshots/s5.png)
+![ScreenShot](https://github.com/hemant394/SE_TOOL/blob/main/screenshots/s6.png)
+
 
 
