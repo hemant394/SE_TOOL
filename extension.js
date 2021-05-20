@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 const vscode = require("vscode")
 const editor = vscode.window.activeTextEditor;
-const term = vscode.window.activeTerminal;
 // const cons_ed = vscode.window.activeDebugConsole;
 const fetch = require('node-fetch');
 
