@@ -48,6 +48,6 @@ anything on github and will able to open them and user can learn
 about different coding practices which programmers use
 
 ## Screenshots
-![ScreenShot](https://github.com/hemant394/SE_TOOL/main/screenshots/s1.png)
+![ScreenShot](https://github.com/hemant394/SE_TOOL/blob/main/screenshots/s1.png)
 
 
