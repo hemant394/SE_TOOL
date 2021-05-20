@@ -1,8 +1,6 @@
 # CodeSearch : Tool for searching cpp related queries on different sites
 
 
-
-
 ---------------------------------------------------------------------------------------------------
 
 ## Motivation
