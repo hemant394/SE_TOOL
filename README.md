@@ -20,9 +20,30 @@ developed a VS Code Extension which allows users to search
 different queries from within VS Code. It will save lot of time
 of programmers and will boost their efficiency and Speed.
 
-### For more information
+---------------------------------------------------------------------------------------------------
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+### Use Case
+Our Tool comes handy for new programmers who encounter with
+errors more frequently and don’t know where to search. it is very
+tedious job to search on google and find different solutions for
+errors that is where our tool comes into picture. user can use our
+tool to search different errors on stack overflow or user can also
+search different important inbuilt functions and data structures
+on cppreference. on cppreference user will be able to find documentation
+of different data structure present in standard template
+libraries and functions which can be used on them. user will be
+able to learn in depth if he/she searches it on cppreference through
+our tool which will redirect user to that link and user will no more
+have to search it on google. Now we can take an example of one of
+the many use cases of our tool. if user is having problem knowing
+different functions which he/she can operate on priority queue
+then user can select priority queue keyword and can search it on
+cppreference using proper command and user will be able to see
+different in depth knowledge on priority queue and different functions
+revolving around it.One another scenario where user can use
+our app is if user wants to fetch different similar programs from
+github then user can click on "githubresults" command and then
+tool will open a search engine for github where user can search
+anything on github and will able to open them and user can learn
+about different coding practices which programmers use
 
-**Enjoy!**
