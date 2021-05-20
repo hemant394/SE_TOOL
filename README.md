@@ -63,5 +63,8 @@ about different coding practices which programmers use
 ![ScreenShot](https://github.com/hemant394/SE_TOOL/blob/main/screenshots/s5.png)
 ![ScreenShot](https://github.com/hemant394/SE_TOOL/blob/main/screenshots/s6.png)
 
+### Video to use tool
+Demonstration of tool
+[video](https://drive.google.com/file/d/1AOKvtJ7NRW9rlh1JpbGm9xYacZ6VG0k3/view)
 
 
