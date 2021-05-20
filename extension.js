@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 const vscode = require("vscode")
 const editor = vscode.window.activeTextEditor;
-// const cons_ed = vscode.window.activeDebugConsole;
 const fetch = require('node-fetch');
 
 
@@ -16,39 +15,14 @@ async function activate(context) {
      async function () {
 
 		const text = editor.document.getText(editor.selection);
-		// const text1 = vscode.debug.activeDebugConsole.document.getText(vscode.debug.activeDebugConsole.items);
-		// vscode.debug.activeDebugConsole.document.getText
-		// var url = 'https://api.stackexchange.com/2.2/search/advanced?order=desc&sort=relevance&accepted=True&answers=1&site=stackoverflow';
+		// using stack exchange api to query selected text
 		var url = 'https://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=c++&intitle='+encodeURIComponent(text)+'&site=stackoverflow';
-		//url += '&q=' + encodeURIComponent(text);
-		//url += '&tagged=' + encodeURIComponent("c++");
 		var res = await fetch(url);
+		// storing results in json format
 		var json = await res.json();
-		console.log(json);
-		// if (vscode.window.activeTerminal !== undefined) {
-		// 	console.log(vscode.window.activeTerminal.document.getText());
-		// } else {
-		// 	console.log("no terminal");
-		// }
-		// console.log(vscode.debug.activeDebugConsole.items)
-		// const articles = json.items.map(article => {
-		// 	return {
-		// 	label: article.title,
-		// 	detail: article.link,
-		// 	link: article.link,
-		// 	}
-		// }  )
-		// const panel = vscode.window.createWebviewPanel('stack',"stackoverflow view",vscode.ViewColumn.Two ,{
-		// 	enableScripts:true
-		// })
-	
-	
-		// panel.webview.html = getWebviewContentofstackoverflow( articles );
-
-
-
-
+		// checking if json is even containing any result or is it empty
 		if (json == null) return
+		// convert so that we can show it on window box
 		const articles = json.items.map(article => {
 			return {
 			label: article.title,
@@ -56,7 +30,7 @@ async function activate(context) {
 			link: article.link,
 			}
 		}  )
-
+		// show results
       const article = await vscode.window.showQuickPick(articles, {
         matchOnDetail: true,
       })
@@ -72,7 +46,9 @@ async function activate(context) {
     "search-c---error.SearchinGithub",
      async function () {
 
+		// storing selected text inside text
 		const text = editor.document.getText(editor.selection);
+		// using github api to query selected text
 		var url = 'https://api.github.com/search/repositories?sort=stars&order=desc&q='+encodeURIComponent(text)+'language:c%2B%2B';
 		
 		var res = await fetch(url);
@@ -103,6 +79,7 @@ async function activate(context) {
      async function () {
 
 		const text = editor.document.getText(editor.selection);
+		// using google programmable search engine to fetch results of different queries
 		var url = 'http://api.serpstack.com/search?access_key=9bd922f9fff3d690c46a4efbdd37b1fc&query='+encodeURIComponent(text)+'+in+cppreference';
 		
 		var res = await fetch(url);
@@ -117,9 +94,6 @@ async function activate(context) {
 			link: article.url,
 			}
 		}  )
-    //   const article = await vscode.window.showQuickPick(articles, {
-    //     matchOnDetail: true,
-    //   })
 
 	console.log(articles);
 	if (articles == null) return
@@ -141,8 +115,6 @@ async function activate(context) {
 			enableScripts:true
 		})
 	
-		// console.log(view.getView())
-	
 		panel.webview.html = getWebviewContentofgoogle();
 
     }
@@ -150,11 +122,10 @@ async function activate(context) {
 
   let stackOverflowView = vscode.commands.registerCommand(
 	  'search-c---error.GithubResults',()=>{
+		//   opening interface for github search engine using google's programmable search element
 	const panel = vscode.window.createWebviewPanel('GithubResults',"stackoverflow view",vscode.ViewColumn.Two ,{
 		enableScripts:true
 	})
-
-	// console.log(view.getView())
 
 	panel.webview.html = getWebviewContentofgithub();
 
@@ -220,31 +191,3 @@ function getWebviewContentofgoogle( ) {
   }
 
 
-
-  
-// function getWebviewContentofstackoverflow( article ) {
-// 	console.log(article[0]);
-// 	return `<!DOCTYPE html>
-// 	<html>
-// 		<head>
-// 			<title>SearchBar</title>
-// 			<style>
-// 				body {
-					
-// 				}
-// 			</style>
-// 		</head>
-// 		<body>
-// 			<h1 style="text-align: center;">StackOverflow</h1>
-// 			<p>Results:</p>
-// 			<ul>
-// 				<li>${article[0].label}</li>
-// 				<li><a href="${article[0].link}">${article[0].link}</a></p></li>
-// 			</ul>
-			
-// 		</body>
-// 	</html>`;
-//   }
-
-
-  

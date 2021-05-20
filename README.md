@@ -51,7 +51,7 @@ about different coding practices which programmers use
 
 ### How to Run
 * clone github repository
-* use npm install to install dependency
+* use "npm install" to install dependencies
 * run extension
 
 
